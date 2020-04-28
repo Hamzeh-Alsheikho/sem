@@ -32,7 +32,6 @@
       </Label>
        <ChoiceBox layoutX="220.0" layoutY="171.0" prefWidth="150.0" />
       <ChoiceBox layoutX="220.0" layoutY="225.0" prefWidth="150.0" />
-
       <TableView layoutX="118.0" layoutY="281.0" prefHeight="214.0" prefWidth="629.0">
         <columns>
           <TableColumn prefWidth="221.5999984741211" text="Product name" />
@@ -53,12 +52,13 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button fx:id="btnOrder" layoutX="400.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnOrder" text="Order" />
+      <Button fx:id="btnOrder" layoutX="295.0" layoutY="545.0" mnemonicParsing="false" onAction="#btnOrder" text="Order" />
       <Label layoutX="601.0" layoutY="507.0" text="Total price">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <Label fx:id="lblTotalPrice" layoutX="676.0" layoutY="504.0" prefHeight="25.0" prefWidth="71.0" />
+      <Button fx:id="btnDeleteUserView" layoutX="447.0" layoutY="545.0" mnemonicParsing="false" onAction="#btnDeleteUserView" text="Delete" />
    </children>
 </AnchorPane>

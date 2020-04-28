@@ -23,13 +23,17 @@ public class UserViewController {
 
     public void btnOrder(javafx.event.ActionEvent actionEvent) {
     }
+    @FXML
+    private Button btnDeleteUserView;
+
+    public void btnDeleteUserView(javafx.event.ActionEvent actionEvent) {
+    }
 
     @FXML
     private void changeToAdminView() throws IOException {
       Main.changeView("adminview.fxml");
 
     }
-
 
 }
 
