@@ -6,6 +6,8 @@ package sample;
         import javafx.scene.control.CheckBox;
         import javafx.scene.control.Label;
         import javafx.scene.layout.AnchorPane;
+
+        import java.awt.event.ActionEvent;
         import java.io.IOException;
 
 public class UserViewController {
@@ -14,43 +16,20 @@ public class UserViewController {
     private AnchorPane rootPane;
 
     @FXML
-    private Label lblCarPriceOut;
-
-    @FXML
-    private Label lblCarPriceOut1;
-
-    @FXML
-    private CheckBox ckbNaviPrice;
-
-    @FXML
-    private CheckBox ckbAirConditionPrice;
-
-    @FXML
-    private CheckBox ckbTowhitch;
-
-    @FXML
-    private CheckBox ckbSunroof;
-
-    @FXML
-    private Label lblTowhitchPrice;
-
-    @FXML
-    private Label lblSunroofPrice;
-
-    @FXML
     private Button userButton;
 
     @FXML
-    private Label lblAirConditionPrice;
+    private Button btnOrder;
 
-    @FXML
-    private Label lblGPSNaviPrice;
-
+    public void btnOrder(javafx.event.ActionEvent actionEvent) {
+    }
 
     @FXML
     private void changeToAdminView() throws IOException {
       Main.changeView("adminview.fxml");
 
     }
+
+
 }
 
