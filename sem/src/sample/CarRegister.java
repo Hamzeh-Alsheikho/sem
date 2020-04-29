@@ -14,7 +14,7 @@ public class CarRegister implements Serializable {
     }
     public void addCar(Car c){cregister.add(c);}
     public void removeAll() { cregister.clear();}
-    public void attachTableView (TabableView tv){ tv.}
+    //public void attachTableView (TabableView tv){ tv.}
 
     public String saveCar (String name, int price){
         Car enCar = new Car(name,price);
