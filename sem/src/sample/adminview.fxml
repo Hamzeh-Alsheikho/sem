@@ -8,12 +8,14 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+
 <AnchorPane fx:id="rootPaneadmin" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminViewController">
    <children>
       <Button fx:id="adminButton" layoutX="737.0" layoutY="34.0" mnemonicParsing="false" onAction="#changeToUserView" prefHeight="42.0" prefWidth="114.0" text="User View" />
-      <ChoiceBox fx:id="productDrop" layoutX="211.0" layoutY="207.0" onDragDetected="#productDrop" prefWidth="150.0" />
+      <ChoiceBox fx:id="productDrop" layoutX="209.0" layoutY="100.0" onDragDetected="#productDrop" prefWidth="150.0" />
       <Label layoutX="405.0" layoutY="28.0" prefHeight="36.0" prefWidth="91.0" text="Admin">
          <font>
             <Font name="System Bold Italic" size="25.0" />
@@ -34,8 +36,13 @@
                <TableColumn prefWidth="214.39999389648438" text="Price" />
            </columns>
        </TableView>
-      <Label layoutX="118.0" layoutY="211.0" prefHeight="18.0" prefWidth="91.0" text="Select product" />
-       <Button fx:id="btnAddProduct" layoutX="252.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="26.0" prefWidth="138.0" text="Add" />
-       <Button fx:id="btnDeleteProduct" layoutX="433.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnDeleteProduct" prefHeight="26.0" prefWidth="138.0" text="Delete" />
+      <Label layoutX="118.0" layoutY="104.0" prefHeight="18.0" prefWidth="91.0" text="Select product" />
+       <Button fx:id="btnAddProduct" layoutX="226.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="26.0" prefWidth="106.0" text="Add" />
+       <Button fx:id="btnDeleteProduct" layoutX="457.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnDeleteProduct" prefHeight="26.0" prefWidth="114.0" text="Delete" />
+      <TextField fx:id="txtProduct" layoutX="209.0" layoutY="146.0" onAction="#txtProduct" />
+      <TextField fx:id="txtPrice" layoutX="209.0" layoutY="187.0" onAction="#txtPrice" />
+      <Label layoutX="118.0" layoutY="150.0" prefHeight="18.0" prefWidth="91.0" text="Product name" />
+      <Label layoutX="118.0" layoutY="191.0" prefHeight="18.0" prefWidth="91.0" text="Price" />
+      <Button fx:id="btnSave" layoutX="231.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="26.0" prefWidth="106.0" text="Save" />
    </children>
 </AnchorPane>

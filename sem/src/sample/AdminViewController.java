@@ -33,6 +33,20 @@ public class AdminViewController {
     void btnAdd(ActionEvent event) {
 
     }
+    public void btnDeleteProduct(ActionEvent actionEvent) {
+    }
+
+    public void productDrop(MouseEvent mouseEvent) {
+    }
+
+    public void txtProduct(ActionEvent actionEvent) {
+    }
+
+    public void txtPrice(ActionEvent actionEvent) {
+    }
+
+    public void btnSave(ActionEvent actionEvent) {
+    }
 
     @FXML
     private void changeToUserView() throws IOException {
@@ -41,9 +55,5 @@ public class AdminViewController {
 
     }
 
-    public void btnDeleteProduct(ActionEvent actionEvent) {
-    }
 
-    public void productDrop(MouseEvent mouseEvent) {
-    }
 }
