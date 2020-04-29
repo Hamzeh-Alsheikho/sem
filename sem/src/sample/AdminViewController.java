@@ -1,8 +1,11 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -11,8 +14,18 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class AdminViewController {
+public class AdminViewController implements Initializable {
+    ObservableList list = FXCollections.observableArrayList();
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        loadData();
+
+    }
+    private CarRegister carRegister = new CarRegister();
+
 
     @FXML
     private AnchorPane rootPaneadmin;
@@ -24,7 +37,7 @@ public class AdminViewController {
     private Button adminButton;
 
     @FXML
-    private ChoiceBox<?> productDrop;
+    private ChoiceBox<String> productDrop;
 
     @FXML
     private Button btnDeleteProduct;
@@ -32,13 +45,21 @@ public class AdminViewController {
     @FXML
     void btnAdd(ActionEvent event) {
 
+
     }
     public void btnDeleteProduct(ActionEvent actionEvent) {
     }
 
     public void productDrop(MouseEvent mouseEvent) {
     }
-
+    private void loadData(){
+        list.removeAll(list);
+        String a="Car type";
+        String b="Components";
+        String c="Extra Options";
+        list.addAll(a,b,c);
+        productDrop.getItems().addAll(list);
+    }
     public void txtProduct(ActionEvent actionEvent) {
     }
 
@@ -54,6 +75,7 @@ public class AdminViewController {
 
 
     }
+
 
 
 }
