@@ -1,8 +1,7 @@
 package sample.model;
 
 public enum Type {
-    ELECTRIC,
-    GASOLINE,
-    DIESEL,
-    HYBRID,
+    CAR_TYPE,
+    COMPONENTS,
+    EXTRAOPTIONS,
 }
