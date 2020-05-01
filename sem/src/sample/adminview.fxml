@@ -23,24 +23,25 @@
       </Label>
       <MenuBar layoutY="3.0" prefWidth="900.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
+            <Menu text="File">
+                <items>
+                    <MenuItem onAction="#openFileMenuClicked" text="Open file" />
+                    <MenuItem onAction="#saveFileMenuClicked" text="Save to file" />
+                </items>
+            </Menu>
         </menus>
       </MenuBar>
-       <TableView layoutX="118.0" layoutY="281.0" prefHeight="214.0" prefWidth="629.0">
+       <TableView fx:id="tblvCar" editable="true" layoutX="118.0" layoutY="281.0" prefHeight="214.0" prefWidth="629.0">
            <columns>
-               <TableColumn prefWidth="221.5999984741211" text="Product name" />
-               <TableColumn prefWidth="214.39999389648438" text="Price" />
+               <TableColumn fx:id="productNameColum" onEditCommit="#productNameColum" prefWidth="221.5999984741211" text="Product name" />
+               <TableColumn fx:id="priceColum" onEditCommit="#priceColum" prefWidth="214.39999389648438" text="Price" />
            </columns>
        </TableView>
       <Label layoutX="118.0" layoutY="104.0" prefHeight="18.0" prefWidth="91.0" text="Select product" />
        <Button fx:id="btnAddProduct" layoutX="226.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="26.0" prefWidth="106.0" text="Add" />
        <Button fx:id="btnDeleteProduct" layoutX="457.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnDeleteProduct" prefHeight="26.0" prefWidth="114.0" text="Delete" />
-      <TextField fx:id="txtProduct" layoutX="209.0" layoutY="146.0" onAction="#txtProduct" />
-      <TextField fx:id="txtPrice" layoutX="209.0" layoutY="187.0" onAction="#txtPrice" />
+      <TextField fx:id="txtProduct" layoutX="209.0" layoutY="146.0" />
+      <TextField fx:id="txtPrice" layoutX="209.0" layoutY="187.0" />
       <Label layoutX="118.0" layoutY="150.0" prefHeight="18.0" prefWidth="91.0" text="Product name" />
       <Label layoutX="118.0" layoutY="191.0" prefHeight="18.0" prefWidth="91.0" text="Price" />
       <Button fx:id="btnSave" layoutX="231.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="26.0" prefWidth="106.0" text="Save" />

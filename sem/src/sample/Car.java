@@ -1,7 +1,6 @@
-package sample.model;
+package sample;
 
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import sample.exceptions.InvalidNameException;
 import sample.exceptions.InvalidPriceException;

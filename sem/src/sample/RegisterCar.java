@@ -1,13 +1,13 @@
-package sample.model;
+package sample;
 
 import javafx.scene.control.TextField;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.AnchorPane;
 
-public class RegisterCar {
+class RegisterCar {
 
-    private GridPane guiData;
+    private AnchorPane guiData;
 
-    RegisterCar(GridPane guiData) {
+    RegisterCar(AnchorPane guiData) {
         this.guiData = guiData;
     }
 
@@ -29,19 +29,19 @@ public class RegisterCar {
 
     private Car createCar() {
 
-        String productName = getString((TextField) guiData.lookup("#productName"));
-        int price = getInt((TextField) guiData.lookup("#price"));
+        String productName = getString((TextField) guiData.lookup("#Product Name"));
+        int price = getInt((TextField) guiData.lookup("#Price"));
 
 
         return new Car(productName,price);
     }
 
-    private String getString(TextField field) {
-        return field.getText();
+    private String getString(TextField txtProduct) {
+        return txtProduct.getText();
     }
 
-    private int getInt(TextField field) {
-        return Integer.parseInt(getString(field));
+    private int getInt(TextField txtPrice) {
+        return Integer.parseInt(getString(txtPrice));
     }
 
     private void resetFields() {
